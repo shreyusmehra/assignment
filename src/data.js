@@ -1,0 +1,58 @@
+export const UserList = [
+  {
+    id: 1,
+    name: "chilman mehrotra",
+    jobTitle: "Client Manager",
+    initials: "CM",
+    email: "chilman@spottabl.com",
+  },
+  {
+    id: 2,
+    name: "saboor sirwal",
+    jobTitle: "Recruitment Success",
+    initials: "SS",
+    email: "saboor@spottabl.com",
+  },
+  {
+    id: 3,
+    name: "smriti sadhwa",
+    jobTitle: "Client Manager",
+    initials: "SW",
+    email: "smriti@spottabl.com",
+  },
+  {
+    id: 4,
+    name: "vanishri",
+    jobTitle: "Client Manager",
+    initials: "V",
+    email: "vani@spottabl.com",
+  },
+  {
+    id: 5,
+    name: "vishal n",
+    jobTitle: "Senior Manager",
+    initials: "V",
+    email: "vishal@spottabl.com",
+  },
+  {
+    id: 6,
+    name: "vidya nagesh",
+    jobTitle: "Recruitment Success",
+    initials: "VN",
+    email: "vidya@spottabl.com",
+  },
+  {
+    id: 7,
+    name: "priyanka singh",
+    jobTitle: "Senior Recruiter",
+    initials: "PS",
+    email: "priyanka@spottabl.com",
+  },
+  {
+    id: 8,
+    name: "ajith kP",
+    jobTitle: "Associate Principal",
+    initials: "AK",
+    email: "ajith@spottabl.com",
+  },
+];

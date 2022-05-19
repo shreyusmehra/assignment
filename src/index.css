@@ -1,13 +1,244 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(242, 242, 242);
+}
+
+.app{
+    background: rgb(242, 242, 242);
+}
+
+.header-container{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2,h4{
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+h4{
+   margin-left: 20px !important ;
+}
+
+
+.container{
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    box-shadow: 10px 10px 8px #e4e4e4;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    margin-bottom: 30px;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.search-bar-container{
+    margin-bottom: 35px;
+    padding-top: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.searched-user-input{
+    padding: 0.75rem 21rem 0.75rem 0rem;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input-fields-container{
+    margin-top: 10px;
+}
+
+#csm-heading{
+    margin-right: 320px;
+}
+
+.add-csm-btn{
+    padding: 0.75rem 1.75rem;
+    border: 2px solid #0202a2;
+    border-radius: 0px 3px 3px 0px;
+    background: #0202a2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.add-csm-btn:hover{
+    background: #02026c;
+    border: 2px solid #02026c;
+}
+
+.usercard{
+    border: 1px solid #000;
+    margin: 0 2rem ;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #fff;
+    position: relative;
+}
+
+.initials-container{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 50px;
+    width: 50px;
+    background-color: #d4d4fc;
+    border-radius: 50%;
+    display: inline-block;
+    font-size:x-large;
+    font-weight: 600;
+}
+
+#initials{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0202a2;
+}
+
+.user-details{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 85px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+}
+
+#name{
+    text-transform: capitalize;
+}
+
+#name,#job-title{
+margin: 0.1rem ;
+padding: 0;
+background: #fff;
+}
+
+.delete-btn-container{
+    margin-left: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+}
+
+.delete-btn{
+    font-size: x-large;
+    background: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #0202a2;
+}
+
+.dropdown-user-list{
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+
+}
+
+.list{
+    width: 86.5%;
+    border: 1px solid #000;
+    margin: 0 2rem;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #fff;
+}
+
+.list:hover{
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+}
+
+.initials-container-searchlist{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 50px;
+    width: 50px;
+    background-color: #d4d4fc;
+    border-radius: 50%;
+    display: inline-block;
+    font-size:x-large;
+    font-weight: 600;
+}
+
+#initials-searchlist{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0202a2;
+}
+
+.user-details-searchlist{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-details-searchlist:hover{
+    background: rgb(242, 242, 242);
+}
+#name-searchlist{
+ text-transform: capitalize;
+}
+
+#name-searchlist,#job-title-searchlist,#email-searchlist{
+margin: 0.1rem;
+padding-left: 20px;
+font-size: medium;
+}
+
+.addList-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 35px;
+    position: absolute;
+    z-index: 10;
+}
+
+.addList-user{
+    border: 1px solid #d4d4fc;
+    border-radius: 2px;
+    margin-left: 5px;
+    padding: 2px;
+    background: #d4d4fc;
+    color: #0202a2;
+    text-transform: capitalize;
+}
+
+.remove-icon{
+    margin-left: 5px;
+    cursor: pointer;
+    color: #0202a2;
 }
