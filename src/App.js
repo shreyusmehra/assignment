@@ -5,9 +5,9 @@ import { useGlobalContext } from "./context";
 import MessageAlert from "./components/MessageAlert";
 
 const App = () => {
-  const { sendAlert } = useGlobalContext();
+  const { sendAlert, closeMatchedUserDisplay } = useGlobalContext();
   return (
-    <div className="app">
+    <div className="app" onClick={closeMatchedUserDisplay}>
       {sendAlert && <MessageAlert />}
       <Header />
       <div className="container">
