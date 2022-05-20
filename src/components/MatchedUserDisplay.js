@@ -4,6 +4,7 @@ import { MdPerson, MdEmail } from "react-icons/md";
 
 const MatchedUserDisplay = () => {
   const {
+    users,
     userList,
     setUserList,
     searchedTerm,
@@ -21,8 +22,13 @@ const MatchedUserDisplay = () => {
   };
 
   const handleClick = (user) => {
+    // function used to add users to list
     const { id, name, jobTitle, initials } = user;
     if ([...new Set(searchedUser?.map((user) => user.id))].includes(id)) {
+      // to remove duplicate users
+      closeMatchedUserDisplay();
+    } else if ([...new Set(users?.map((user) => user.id))].includes(id)) {
+      // to prevent duplicate users from being added to list
       closeMatchedUserDisplay();
     } else {
       setSearchedUser([

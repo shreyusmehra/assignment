@@ -15,7 +15,7 @@ export const UserList = [
   },
   {
     id: 3,
-    name: "smriti sadhwa",
+    name: "smriti wadhwa",
     jobTitle: "Client Manager",
     initials: "SW",
     email: "smriti@spottabl.com",

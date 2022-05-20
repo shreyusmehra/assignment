@@ -4,6 +4,7 @@ import { FaTimes } from "react-icons/fa";
 const SearchedUserDisplay = () => {
   const { searchedUser, setSearchedUser } = useGlobalContext();
   const removeUser = (id) => {
+    // function user to remove users from selected users list
     let newUsers = searchedUser.filter((person) => person.id !== id);
     setSearchedUser(newUsers);
   };

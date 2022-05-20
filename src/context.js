@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [searchedTerm, setSearchedTerm] = useState("");
   const [searchedUser, setSearchedUser] = useState([]);
   const [isClickedSearchbar, setIsClickedSearchbar] = useState(false);
+  const [sendAlert, setSendAlert] = useState(null);
 
   const openMatchedUserDisplay = () => {
     setIsClickedSearchbar(true);
@@ -26,6 +27,8 @@ const AppProvider = ({ children }) => {
         setUsers,
         userList,
         setUserList,
+        sendAlert,
+        setSendAlert,
         searchedTerm,
         setSearchedTerm,
         searchedUser,

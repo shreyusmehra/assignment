@@ -159,11 +159,10 @@ background: #fff;
     padding: 0;
     position: absolute;
     z-index: 10;
-
 }
 
 .list{
-    width: 86.5%;
+    width: 85%;
     border: 1px solid #000;
     margin: 0 2rem;
     padding: 0.75rem;
@@ -241,4 +240,31 @@ font-size: medium;
     margin-left: 5px;
     cursor: pointer;
     color: #0202a2;
+}
+
+.message-sent-container {
+    color: #006400;
+    border: 2px solid #90ee90;
+    background: #90ee90;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.message {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.message-close-btn-container {
+    margin-left: 28rem;
+}
+
+.message-close-btn {
+    margin: 10px auto;
+    border: 2px solid #90ee90;
+    background: #90ee90;
+    fill: #90ee90;
+    cursor: pointer;
+    font-size: large;
 }

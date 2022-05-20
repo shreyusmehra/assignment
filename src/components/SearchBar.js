@@ -13,6 +13,7 @@ const SearchBar = () => {
     openMatchedUserDisplay,
     closeMatchedUserDisplay,
     isClickedSearchbar,
+    setSendAlert,
   } = useGlobalContext();
 
   const inputSearchHandler = (e) => {
@@ -20,11 +21,15 @@ const SearchBar = () => {
     openMatchedUserDisplay();
   };
   const AddCSMHandler = (e) => {
+    // function used to add selected users to list
     e.preventDefault();
     closeMatchedUserDisplay();
     setSearchedTerm("");
     setUsers([...users, ...searchedUser]);
     setSearchedUser([]);
+    if (searchedUser.length !== 0) {
+      setSendAlert("Selected Users successfully added to List");
+    }
   };
 
   return (
@@ -50,7 +55,6 @@ const SearchBar = () => {
             Add CSM
           </button>
         </div>
-
         {isClickedSearchbar && <MatchedUserDisplay />}
       </div>
     </form>
